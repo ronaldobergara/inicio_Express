@@ -7,7 +7,7 @@ export class Clientes {
                 msg: "Rota Funcionando"
             })   
         } catch (error) {
-            
+            return res.status(500).json({error})
         }
     }
 }
